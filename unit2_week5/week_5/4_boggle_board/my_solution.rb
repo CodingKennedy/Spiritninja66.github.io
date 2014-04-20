@@ -1,84 +1,84 @@
-# U2.W5: A Nested Array to Model a Boggle Board
+# # U2.W5: A Nested Array to Model a Boggle Board
 
-# I worked on this challenge [by myself].
+# # I worked on this challenge [by myself].
 
-boggle_board = [["b", "r", "a", "e"],
-                ["i", "o", "d", "t"],
-                ["e", "c", "l", "r"],
-                ["t", "a", "k", "e"]]
-
-
-# Part 1: Access multiple elements of a nested array
-
-# Pseudocode
-# Write two codes that return two seperate words from the boggle board arrays.
-# Initial Solution
-def create_word(board, *coords)
-    coords.map { |coord| board[coord.first][coord.last]}.join("")
-  end
-
-  p create_word(boggle_board, [3,0], [3,1], [3,2], [3,3])  #=> returns "take"  
-  p create_word(boggle_board, [0,1], [0,2], [1,2])  #=> creates what california slang word? rad
-
-# Refactored Solution
+# boggle_board = [["b", "r", "a", "e"],
+#                 ["i", "o", "d", "t"],
+#                 ["e", "c", "l", "r"],
+#                 ["t", "a", "k", "e"]]
 
 
-# DRIVER TESTS GO BELOW THIS LINE
+# # Part 1: Access multiple elements of a nested array
 
-puts boggle_board[3][0] == "t"   
-puts boggle_board[3][1] == "a" 
-puts boggle_board[3][2] == "k" 
-puts boggle_board[3][3] == "e" 
+# # Pseudocode
+# # Write two codes that return two seperate words from the boggle board arrays.
+# # Initial Solution
+# def create_word(board, *coords)
+#     coords.map { |coord| board[coord.first][coord.last]}.join("")
+#   end
 
-puts boggle_board[0][1] == "r" 
-puts boggle_board[0][2] == "a"
-puts boggle_board[1][2] == "d"  
+#   p create_word(boggle_board, [3,0], [3,1], [3,2], [3,3])  #=> returns "take"  
+#   p create_word(boggle_board, [0,1], [0,2], [1,2])  #=> creates what california slang word? rad
 
-# Reflection 
+# # Refactored Solution
 
-#-------------------------------------------------------------------------------
 
-# Part 2: Write a method that takes a row number and returns all the elements in the row.  
+# # DRIVER TESTS GO BELOW THIS LINE
 
-# Pseudocode
-# alter code to return a horizontal output from boggle board arrays.
-# and then call it
-# Initial Solution
-def get_row(board, row)
-  board[row]
-end
+# puts boggle_board[3][0] == "t"   
+# puts boggle_board[3][1] == "a" 
+# puts boggle_board[3][2] == "k" 
+# puts boggle_board[3][3] == "e" 
+
+# puts boggle_board[0][1] == "r" 
+# puts boggle_board[0][2] == "a"
+# puts boggle_board[1][2] == "d"  
+
+# # Reflection 
+
+# #-------------------------------------------------------------------------------
+
+# # Part 2: Write a method that takes a row number and returns all the elements in the row.  
+
+# # Pseudocode
+# # alter code to return a horizontal output from boggle board arrays.
+# # and then call it
+# # Initial Solution
+# def get_row(board, row)
+#   board[row]
+# end
  
-p get_row(boggle_board, 1)#=> ["i", "o", "d", "t"]
+# p get_row(boggle_board, 1)#=> ["i", "o", "d", "t"]
 
 
 
-# Refactored Solution
+# # Refactored Solution
 
 
-# DRIVER TESTS GO BELOW THIS LINE
-puts boggle_board[1] == ["i", "o", "d", "t"]   
+# # DRIVER TESTS GO BELOW THIS LINE
+# puts boggle_board[1] == ["i", "o", "d", "t"]   
 
 
-# Reflection 
+# # Reflection 
 
 
 
-#-------------------------------------------------------------------------------
+# #-------------------------------------------------------------------------------
 
-# Part 3: Now write a method that takes a column number and returns all the elements in the column.
+# # Part 3: Now write a method that takes a column number and returns all the elements in the column.
 
-# Pseudocode
-# write a code that will return a vertical column from the boggle board columns. Then call it.
-# Initial Solution
-def get_col(board, col)
-    col_array =[]
-    board.each do |row|
-      col_array << row[col]
-    end
-    col_array
-end
+# # Pseudocode
+# # write a code that will return a vertical column from the boggle board columns. Then call it.
+# # Initial Solution
+# def get_col(board, col)
+#     col_array =[]
+#     board.each do |row|
+#       col_array << row[col]
+#     end
+#     col_array
+# end
  
-p get_col(boggle_board,1)   #=> ["b","i","e","t"] 
+# p get_col(boggle_board,1)   #=> ["b","i","e","t"] 
 
 
 
@@ -89,10 +89,7 @@ p get_col(boggle_board,1)   #=> ["b","i","e","t"]
 
 # DRIVER TESTS GO BELOW THIS LINE
 
-puts boggle_board[0][1] == "r"   # returns boggle_board[row_number][column_number]
-puts boggle_board[2][1] == "c" #=> should be true
-puts boggle_board[3][3] == "e" #=> should be true
-puts boggle_board[2][3] == "x" #=> should be false
+
 #refactored
 class Boggle
  
@@ -119,7 +116,10 @@ end
  
 boggle = Boggle.new
 # Reflection 
-
+puts boggle_board[0][1] == "r"   # returns boggle_board[row_number][column_number]
+puts boggle_board[2][1] == "c" #se=> should be true
+puts boggle_board[3][3] == "e" #=> should be true
+puts boggle_board[2][3] == "x" #=> should be fal
 # This was an interesting excercise. I really like how it was broken up into seperate parts to help understand what is supposed to be done.
 # I did have to do some research on some methods I wanted to use and I learned about "p" which works similar to puts and print, but it attributes
 # 	the output to a string which I found is very useful. some of the code I was working on would have required .to_s but this made it a lot simpler.

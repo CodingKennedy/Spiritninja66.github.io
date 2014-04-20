@@ -1,5 +1,5 @@
 header{
-	background: #99CC32;
+	background: #FFCC00;
 	font-size: 48px; 
 	text-align: left;
 }
@@ -8,7 +8,7 @@ header{
 
 body{
 	height: 100%;
-	background: #FFECC8;
+	background: #FFFFCC;
 	font-size: 15 px; 
 	font-family: "century gothic"; 
 	font-color: #5E5043;
@@ -25,7 +25,7 @@ ul{
 	float: left;
 	z-index:100;
 	padding: 12px 14px 12px 12px;
-	background:#FFCC99;
+	background:#FF6600;
 }
 table{
 	margin-right: auto;

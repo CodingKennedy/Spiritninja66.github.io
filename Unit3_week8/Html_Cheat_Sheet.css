@@ -1,0 +1,35 @@
+header{
+	background: grey;
+	font-size: 48px; 
+	text-align: center;
+}
+
+
+
+body{
+	height: 100%;
+	font-size: 15 px; 
+	font-family: "century gothic"; 
+	
+}
+
+div{
+	display: block;
+}
+ 
+
+ul{
+	width: 160px;
+	position: relative;
+	float: left;
+	z-index:100;
+	padding: 12px 14px 12px 12px;
+	
+}
+table{
+	margin-right: auto;
+	margin-left:auto;
+	text-align: left;
+	font: 15px "century gothic" #6E6256;
+	
+}

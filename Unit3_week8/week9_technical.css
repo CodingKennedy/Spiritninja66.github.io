@@ -22,26 +22,36 @@ body{
 	font-size: 15 px; 
 	font-family: "century gothic"; 
 	line-height: 1.5em;
-	background: #B84D4D;
+	background: #A31919;
 }
 
 
 
 nav{
 	float: left;
-	width: 25%;
+	width: 15%;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
 
 }
 
 
  
-a:link {color:#FF0000;}      
-a:visited {color:#00FF00;}  
-a:hover {color:#FF00FF;}  
-a:active {color:#0000FF;}  
+a:link {color:#00FFFF;}      
+a:visited {color:#00FFFF;}  
+a:hover {color:#00FFFF;}  
+a:active {color:#00FFFF;}  
 
 div{
 	display: block;
+	width: 85%;
+	background-color: #B84D4D;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: 120px;
 	
 }
 	

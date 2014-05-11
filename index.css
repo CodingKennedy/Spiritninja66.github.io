@@ -20,15 +20,24 @@ span{
 	float: left;
 	background: #FA8072;
 }
-#right_column{
-	padding: 10px 16px;
+nav{
+	display: block;
+	width: 85%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: 140px;
 }
 p{
 	text-align: center;
-	font: 15px "century gothic" #6E6256;
+	font:"Arial Black";
 } 
 header{
 	background: #99CC32;
 	font-size: 48px; 
 	text-align: left;
 }
+a:link {color:#007ACC;}      
+a:visited {color:#007ACC;}  
+a:hover {color:#007ACC;}  
+a:active {color:#007ACC;} 
